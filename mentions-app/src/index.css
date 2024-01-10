@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  display: grid;
+  place-content: center;
+  min-width: 100%;
+  min-height: 100%;
+  font-family: Lato, sans-serif;
+}
+
+input {
+  border-radius: 4px;
+  border: 1px solid var(--grayscale-gray, #616061);
+  background: var(--grayscale-white, #fff);
+  padding: 8px 12px;
+  width: 808px;
+  height: 40px;
+  font-size: 16px;
+}
+
+.suggestion-box {
+  list-style: none;
+  border: 1px solid #616061;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-top: 10px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 267px;
+  background-color: white;
+  border: 1px solid #ccc;
+}
+
+.suggestion-box li {
+  cursor: pointer;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.suggestion-box li:hover {
+  background-color: #f1f1f1;
+}
+
+.mention-text {
+  background-color: lightblue;
+}
+
+.selected-mention {
+  background: rgba(29, 155, 209, 0.44);
+  color: #117aa7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  padding: 2px 5px;
+  z-index: 1;
+}
